@@ -1,0 +1,236 @@
+html {
+	scroll-snap-type: y mandatory; /* For Google Chrome */
+}
+
+body {
+	padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #000;
+	background-color: #F1F1F1;
+	transition: background-color 1s ease;
+  scroll-snap-type: y mandatory; /* For Safari */
+}
+
+.section {
+	height: 100vh;
+  width: 100vw;
+  scroll-snap-align: start;
+}
+
+#banner {
+	background-image: url(images/background.png);
+	background-position: center;
+	background-size: cover;
+}
+
+.text-banner {
+	display: grid;
+	padding: 15% 20% 25% 7%;
+}
+
+#header-info {
+	font-size: 24px;
+}
+
+#header-title {
+	font-size: 35px;
+}
+
+#novel1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+#novel2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+#novel3 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+#novel4 {
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+	flex-wrap: wrap;
+}
+
+.description{
+	width: 400px;
+}
+
+.cover {
+	box-shadow: 0 15px 35px black;
+	margin-left: 50px;
+}
+
+/* Cards part */
+#section-bottom{	
+	display: flex;
+	flex-direction: column;
+  justify-content: space-between;
+}
+
+.actions{
+	display: inherit;
+	flex-direction: inherit;
+	padding-top: 12%;
+	justify-self: center;
+}
+
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.card {
+	width: 300px;
+	background-image: url(images/background.png);
+	background-position: center;
+	padding: 15px;
+	border-radius: 4px;
+	box-shadow: 0 15px 35px rgba(50, 50, 93, .1);
+	margin: 8px;
+	color: black;
+	text-align: center;
+}
+
+.card-text {
+	font-size: 15px;
+}
+
+.card-title {
+	font-size: 17px;
+}
+
+#cta {
+	text-align: center;
+}
+
+.footer{
+	width: 100vw;
+}
+
+/* Fixed elements */
+
+.fixed{
+	position: fixed;
+}
+
+#header-left {
+ 	top: 5%;
+ 	left: 4%;
+}
+
+#header-right {
+ 	top: 7%;
+ 	right: 4%;
+}
+
+#bottom-right {
+ 	bottom: 50px;
+ 	right: 4%;
+}
+
+@media (max-width: 809px){
+	#header-right {
+		display: none;
+	}
+	#header-left {
+		display: none;
+	}
+	#bottom-right {
+		display: none;
+	}
+	.actions {
+		padding-top: 0;
+	}
+}
+
+/* Clickable Icons style */
+.icons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	column-gap: 20px;
+	font-size: 25px;
+}
+
+i:hover {
+	color: #4F4F4F;;
+}
+
+/* Style links */
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+.menu{
+	text-align: right;
+}
+
+/* Style buttons */
+.btn {
+  background-color: black;
+  border: none;
+  color: #F1F1F1;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 4px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Background on mouse-over */
+.btn:hover {
+  background-color: #4F4F4F;
+}
+
+.btn-subscribe {
+  background-color: black;
+  border: none;
+  color: #F1F1F1;
+  padding: 10px 25px;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 4px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Colors for JS*/
+.color-white {
+  background-color: #F1F1F1
+}
+.color-turquoise {
+  background-color: #90DADB
+}
+.color-emerald {
+  background-color: #329399;
+}
+.color-blue {
+  background-color: #355FA8;
+}
+.color-violet {
+  background-color: #714F8E;
+}
+.color-orange {
+  background-color: #E1756E;
+}
+
