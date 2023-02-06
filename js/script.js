@@ -3,7 +3,7 @@ $(window).scroll(function() {
   // selectors
   var $window = $(window),
       $body = $('body'),
-      $section = $('.section');
+      $section = $('section');
   
   // Change 33% earlier than scroll position so colour is there when you arrive.
   var scroll = $window.scrollTop() + ($window.height() / 3);

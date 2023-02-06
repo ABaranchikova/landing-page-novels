@@ -6,22 +6,47 @@ body {
 	padding: 0;
 	margin: 0;
 	font-family: 'Montserrat', sans-serif;
-	color: #000;
+	color: #1B1C1E;
 	background-color: #F1F1F1;
 	transition: background-color 1s ease;
 	scroll-snap-type: y mandatory;
 	position: relative; /* For Safari */
 }
 
-.header {
+header {
 	position: fixed;
+}
+
+.header-top {
 	display: flex;
 	justify-content: space-between;
 	width: 100vw;
 	margin: 20px 20px;
 }
 
-.section {
+/* Style Menu */
+.menu-fixed {
+	position: fixed;
+	bottom: 50px;
+	right: 4%;
+	text-align: right;
+}
+
+a {
+	color: #1B1C1E;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #1B1C1E;
+	text-decoration: none;
+}
+
+a:hover {
+	color: blueviolet;
+}
+
+section {
 	height: 100vh;
 	width: 100vw;
 	display: flex;
@@ -29,6 +54,8 @@ body {
 	justify-content: center;
 	scroll-snap-align: start;
 }
+
+/* Banner part */
 
 #banner {
 	background-image: url(../images/background.png);
@@ -49,6 +76,7 @@ body {
 	font-size: 24px;
 }
 
+/* Novels part */
 .novel {
 	display: flex;
 	justify-content: center;
@@ -61,7 +89,7 @@ body {
 }
 
 .cover {
-	box-shadow: 0 15px 35px black;
+	box-shadow: 0 15px 35px #1B1C1E;
 	margin: 0 25px 0 25px;
 }
 
@@ -93,7 +121,7 @@ body {
 	border-radius: 4px;
 	box-shadow: 0 15px 35px rgba(50, 50, 93, .1);
 	margin: 8px;
-	color: black;
+	color: #1B1C1E;
 	text-align: center;
 }
 
@@ -113,16 +141,10 @@ body {
 	text-align: center;
 }
 
-.footer {
+footer {
 	width: 100vw;
 	position: absolute;
 	bottom: 0;
-}
-
-.menu-fixed {
-	position: fixed;
-	bottom: 50px;
-	right: 4%;
 }
 
 @media (max-width: 809px) {
@@ -137,25 +159,6 @@ body {
 	.actions {
 		padding-top: 0;
 	}
-}
-
-/* Style links */
-a {
-	color: black;
-	text-decoration: none;
-}
-
-a:visited {
-	color: black;
-	text-decoration: none;
-}
-
-a:hover {
-	color: blueviolet;
-}
-
-.menu {
-	text-align: right;
 }
 
 /* Colors for JS*/
