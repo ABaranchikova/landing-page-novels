@@ -1,0 +1,40 @@
+.actions {
+	display: inherit;
+	flex-direction: inherit;
+	padding-top: 3em;
+	justify-self: center;
+}
+
+#cta {
+	text-align: center;
+}
+
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.card {
+	width: 300px;
+	background-image: url(../../images/background.png);
+	background-position: center;
+	padding: 15px;
+	border-radius: 4px;
+	box-shadow: 0 15px 35px rgba(50, 50, 93, .1);
+	margin: 8px;
+	color: #1B1C1E;
+	text-align: center;
+}
+
+.arrow {
+	height: 35px;
+}
+
+.card-title {
+	font-size: 17px;
+}
+
+.card-text {
+	font-size: 15px;
+}

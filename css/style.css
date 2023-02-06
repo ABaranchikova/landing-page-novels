@@ -25,7 +25,7 @@ header {
 }
 
 /* Style Menu */
-.menu-fixed {
+nav {
 	position: fixed;
 	bottom: 50px;
 	right: 4%;
@@ -55,7 +55,7 @@ section {
 	scroll-snap-align: start;
 }
 
-/* Banner part */
+/* Style banner */
 
 #banner {
 	background-image: url(../images/background.png);
@@ -76,7 +76,7 @@ section {
 	font-size: 24px;
 }
 
-/* Novels part */
+/* Style novels */
 .novel {
 	display: flex;
 	justify-content: center;
@@ -84,8 +84,13 @@ section {
 	flex-wrap: wrap;
 }
 
+.annotation {
+	margin: 15px
+}
+
 .description {
-	width: 400px;
+	min-width: 240px;
+	max-width: 400px;
 }
 
 .cover {
@@ -93,52 +98,11 @@ section {
 	margin: 0 25px 0 25px;
 }
 
-/* Cards part */
+/* Style bottom section */
 #section-bottom {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-}
-
-.actions {
-	display: inherit;
-	flex-direction: inherit;
-	padding-top: 3em;
-	justify-self: center;
-}
-
-.cards {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-}
-
-.card {
-	width: 300px;
-	background-image: url(../images/background.png);
-	background-position: center;
-	padding: 15px;
-	border-radius: 4px;
-	box-shadow: 0 15px 35px rgba(50, 50, 93, .1);
-	margin: 8px;
-	color: #1B1C1E;
-	text-align: center;
-}
-
-.arrow {
-	height: 35px;
-}
-
-.card-title {
-	font-size: 17px;
-}
-
-.card-text {
-	font-size: 15px;
-}
-
-#cta {
-	text-align: center;
 }
 
 footer {
@@ -147,21 +111,38 @@ footer {
 	bottom: 0;
 }
 
-@media (max-width: 809px) {
-	.header {
-		display: none;
-	}
 
-	.menu-fixed {
+/* Responsiveness */
+@media (max-width: 539px) {
+	header {
 		display: none;
 	}
 
 	.actions {
 		padding-top: 0;
 	}
+
+	.arrow {
+		display: none;
+	}
 }
 
-/* Colors for JS*/
+@media (max-width: 759px) {
+	.img-book {
+		width: 200px;
+	}
+
+	.card {
+		padding: 10px;
+		margin: 5px;
+	}
+
+	.card-title {
+		margin-top: 5px;
+	}
+}
+
+/* Colors for JS */
 .color-white {
 	background-color: #F1F1F1
 }
