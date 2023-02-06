@@ -1,0 +1,31 @@
+/* Style buttons */
+.btn {
+	background-color: black;
+	border: none;
+	color: #F1F1F1;
+	padding: 12px 30px;
+	margin: 20px 40px;
+	cursor: pointer;
+	font-size: 20px;
+	border-radius: 4px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.btn:hover {
+	background-color: #4F4F4F;
+}
+
+.btn-subscribe {
+	background-color: black;
+	border: none;
+	color: #F1F1F1;
+	padding: 10px 25px;
+	cursor: pointer;
+	font-size: 15px;
+	border-radius: 4px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.btn-subscribe:hover {
+	background-color: #4F4F4F;
+}

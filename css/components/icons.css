@@ -1,0 +1,12 @@
+.icons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	column-gap: 20px;
+	font-size: 25px;
+}
+
+i:hover {
+	color: #4F4F4F;
+	;
+}
