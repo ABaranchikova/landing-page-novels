@@ -5,6 +5,24 @@
 	justify-self: center;
 }
 
+@media (max-width: 539px) {
+	.actions {
+		padding-top: 0em;
+		padding-bottom: 3em;
+	}
+	#cta {
+		font-size: 20px;
+	}
+	.card {
+		padding: 10px;
+		margin: 5px;
+	}
+
+	.card-title {
+		margin-top: 5px;
+	}
+}
+
 #cta {
 	text-align: center;
 }

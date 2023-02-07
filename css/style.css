@@ -72,8 +72,9 @@ section {
 	font-size: 35px;
 }
 
-#banner-info {
+.banner-info {
 	font-size: 24px;
+	text-align: justify;
 }
 
 /* Style novels */
@@ -91,11 +92,16 @@ section {
 .description {
 	min-width: 240px;
 	max-width: 400px;
+	text-align: justify;
 }
 
 .cover {
 	box-shadow: 0 15px 35px #1B1C1E;
 	margin: 0 25px 0 25px;
+}
+
+.img-book {
+	max-width: 200px
 }
 
 /* Style bottom section */
@@ -118,27 +124,34 @@ footer {
 		display: none;
 	}
 
-	.actions {
-		padding-top: 0;
-	}
-
 	.arrow {
 		display: none;
 	}
 }
 
 @media (max-width: 759px) {
+	.banner-title {
+		font-size: 22px;
+	}
+
+	.banner-info {
+		font-size: 18px;
+	}
+
+	.title {
+		font-size: 18px;
+	}
+
+	.description {
+		font-size: 14px;
+	}
+	
+	.novel {
+		padding-bottom: 1em;
+	}
+
 	.img-book {
-		width: 200px;
-	}
-
-	.card {
-		padding: 10px;
-		margin: 5px;
-	}
-
-	.card-title {
-		margin-top: 5px;
+		width: 180px;
 	}
 }
 
